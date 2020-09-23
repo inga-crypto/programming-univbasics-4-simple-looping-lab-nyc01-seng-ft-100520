@@ -18,5 +18,11 @@ def output_array(array)
 end
 
 def return_string_array(array)
-  array.map { |i| array << i.to_s }
+ i = 0
+ new_array = []
+ while i < array.length
+  new_array << array[i].to_s
+ i += 1
+ end
+ return new_array
 end
